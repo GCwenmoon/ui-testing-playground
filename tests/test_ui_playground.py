@@ -153,7 +153,7 @@ def test_progress_bar(page: Page):
     
     while True:
         valuenow = int(progress_bar.get_attribute("aria-valuenow"))
-        if valuenow >= 30:
+        if valuenow >= 75:
             stop_btn.click()
             break
 
@@ -230,12 +230,11 @@ def test_nbsp(page: Page):
     # Change the space between 'My' and 'Button' to a non-breaking space. 
     # This time the XPath should be valid.
 
-    page.goto("http://uitestingplayground.com/mouseover")
+    page.goto("http://uitestingplayground.com/nbsp")
 
-    button = page.locator("//button[text()='My\u00a0Button]")
+    button = page.locator("//button[text()='My\u00a0Button']")
     button.click(timeout=2000)
-
-    expect(button).to_be_enabled
+    expect(button).to_be_enabled()
 
 
 def test_overlapped(page: Page):
