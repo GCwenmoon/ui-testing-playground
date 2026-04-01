@@ -22,34 +22,44 @@ This repository demonstrates how to automate various challenging UI elements and
 
 ## 🚀 Getting Started
 
-### 1. Install dependencies
+### A. Install dependencies
 
+1. Build virtual enviornment
 ```bash
-# build virtual enviornment
 python -m venv venv
+```
 
-# activate venv
+2. Activate venv
+```bash
 # Windows:
 venv\Scripts\activate
+
 # macOS / Linux:
 source venv/bin/activate
+```
 
-# install requirements
+3. Upgrade pip to latest if needed
+```bash
+python.exe -m pip install --upgrade pip
+```
+
+4. install requirements
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Clone the repository
+### B. Clone the repository and Run the script
 
 ```bash
 git clone https://github.com/GCwenmoon/ui-testing-playground.git
 cd ui-testing-playground
-2. Run the tests
-Bash# Run all tests
-python -m pytest tests/ -v
+```
 
-# Run with detailed output
+Run the test
+```bash
 python -m pytest tests/test_ui_playground.py -v
 ```
+
 
 ## 📋 Implemented Test Case
 All tests are located in tests/test_ui_playground.py and cover various UI challenges from the playground site:
