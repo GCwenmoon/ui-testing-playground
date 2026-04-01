@@ -20,7 +20,7 @@ This repository demonstrates how to automate various challenging UI elements and
 
 
 
-text## 🚀 Getting Started
+## 🚀 Getting Started
 
 ### 1. Install dependencies
 
@@ -34,8 +34,9 @@ venv\Scripts\activate
 # macOS / Linux:
 source venv/bin/activate
 
-# 安裝所需套件
+# install requirements
 pip install -r requirements.txt
+```
 
 ### 2. Clone the repository
 
@@ -48,7 +49,9 @@ python -m pytest tests/ -v
 
 # Run with detailed output
 python -m pytest tests/test_ui_playground.py -v
-📋 Implemented Test Cases
+```
+
+## 📋 Implemented Test Case
 All tests are located in tests/test_ui_playground.py and cover various UI challenges from the playground site:
 
 Dynamic ID
