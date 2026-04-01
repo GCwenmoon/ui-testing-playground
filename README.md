@@ -54,7 +54,7 @@ python -m pytest tests/test_ui_playground.py -v
 ## 📋 Implemented Test Case
 All tests are located in tests/test_ui_playground.py and cover various UI challenges from the playground site:
 
-Dynamic ID
-Class Attribute
-Hidden Layers
-And more…
+- Dynamic ID
+- Class Attribute
+- Hidden Layers
+- And more…
