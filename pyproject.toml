@@ -28,7 +28,8 @@ python_functions = ["test_*"]
 
 # default options
 addopts = [
-    "-v",                   
+    "-v",
+    "--strict-markers",                   
 ]
 
 norecursedirs = [".git", "__pycache__", ".venv", "venv", "env"]

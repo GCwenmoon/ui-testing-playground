@@ -1,6 +1,5 @@
 from playwright.sync_api import Page, expect, TimeoutError
 import pytest
-import re
 
 def test_dynamicID(page: Page):
     # Record button click.
