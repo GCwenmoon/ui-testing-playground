@@ -1,6 +1,0 @@
-# Core testing framework
-pytest>=9.0.0
-
-# Modern browser automation (recommended)
-playwright>=1.58.0
-pytest-playwright>=0.8.0
