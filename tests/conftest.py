@@ -7,7 +7,7 @@ from pathlib import Path
 @pytest.fixture(autouse=True, scope="session") 
 def page():
     playwright = sync_playwright().start()
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch()
     
     # create context and trace
     context = browser.new_context()

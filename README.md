@@ -18,49 +18,6 @@ This repository demonstrates how to automate various challenging UI elements and
 - **Testing Framework**: Playwright, pytest
 - **Test Site**: [http://uitestingplayground.com](http://uitestingplayground.com/)
 
-
-
-## 🚀 Getting Started
-
-### A. Install dependencies
-
-1. Build virtual enviornment
-```bash
-python -m venv venv
-```
-
-2. Activate venv
-```bash
-# Windows:
-venv\Scripts\activate
-
-# macOS / Linux:
-source venv/bin/activate
-```
-
-3. Upgrade pip to latest if needed
-```bash
-python.exe -m pip install --upgrade pip
-```
-
-4. install requirements
-```bash
-pip install -r requirements.txt
-```
-
-### B. Clone the repository and Run the script
-
-```bash
-git clone https://github.com/GCwenmoon/ui-testing-playground.git
-cd ui-testing-playground
-```
-
-Run the test
-```bash
-python -m pytest tests/test_ui_playground.py -v
-```
-
-
 ## 📋 Implemented Test Case
 All tests are located in tests/test_ui_playground.py and cover various UI challenges from the playground site:
 
@@ -68,3 +25,46 @@ All tests are located in tests/test_ui_playground.py and cover various UI challe
 - Class Attribute
 - Hidden Layers
 - And more…
+
+## 🚀 Getting Started
+
+### A. Installation
+
+1. Install uv
+```bash
+# Windows
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# Linux / MacOS
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+2. Clone Repository
+```bash
+git clone https://github.com/GCwenmoon/ui-testing-playground.git
+
+cd ui-testing-playground
+```
+
+3. Build virtual environment
+```bash
+uv sync --group dev
+```
+
+4. Install Playwright Browser
+```bash
+uv run playwright install
+```
+
+
+### B. Run the tests
+
+Run all tests
+```bash
+uv run pytest
+```
+
+Run all tests with threading
+```bash
+uv run pytest -n auto
+```
