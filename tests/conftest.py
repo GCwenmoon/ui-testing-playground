@@ -27,7 +27,7 @@ def page():
     trace_path = trace_dir / f"trace_{timestamp}.zip"
     
     context.tracing.stop(path=trace_path)
-    print(f"Trace 已儲存：{trace_path}")
+    print(f"Trace saved to:{trace_path}")
     
     context.close()
     browser.close()
